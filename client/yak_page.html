@@ -1,0 +1,15 @@
+<template name="yakPage">
+	<div class="form-style">
+		<div class="container">
+			{{> yakItem}}
+			<div class="comment">
+				<h4>Comments</h4>
+				{{#each comments}}
+					{{> commentItem}}
+				{{/each}}
+			</div>	
+
+			{{> commentSubmit}}	
+		</div>
+	</div>
+</template>
