@@ -2,13 +2,13 @@ Yaks = new Meteor.Collection('yaks');
 
 Comments = new Mongo.Collection("comments");
 
-Router.route('/', {name: 'firstpage'})
+Router.route('/', {name: 'accounts'})
 
 Router.route('/yakslist', {name: 'yaksList'})
 
 Router.route('/submit', {name: 'yaksSubmit'});
 
-Router.route('/login', {name: 'accounts'});
+Router.route('/login', {name: 'firstpage'});
 
 
 // Josh: tried routing to a new list from /wellness
