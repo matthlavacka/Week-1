@@ -1,0 +1,18 @@
+<template name="wellnessSubmit">
+	<div class="wellnessSubmit">
+		<div class="form-style">
+			<div class="container">
+					<form class="yaksSubmitForm">
+						{{#if currentUser}}
+						<div class="pull-right">
+							{{> loginButtons}}
+						</div>
+						{{/if}}
+						<h3>Send yak. It's anonymous</h3>
+						<input autofocus="autofocus" type="text" id="yak" class="yak-form form-control" name="yak" placeholder="Type your yak here"/>
+						<input type="submit" value="Send yak" class="btn btn-primary">
+					</form>
+			</div>
+		</div>
+	</div>
+</template>
