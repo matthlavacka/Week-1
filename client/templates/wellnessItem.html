@@ -1,0 +1,20 @@
+<template name="wellnessItem">
+	<div class="yak">
+		<li class="list-group-item">
+			<div class="yakPost">
+				<p class="break-el">{{yak}}</p>
+			{{#if currentUser}}
+				<a class="btn" href="{{pathFor 'yakPage'}}">{{commentsCount}} comments</a>
+				<a class="btn pull-right btn-small no" href="#"><i class="fa fa-chevron-down"></i></a>
+				<a class="btn pull-right" href="#"> {{score}} </a>
+				<a class="btn pull-right btn-small yes" href="#"><i class="fa fa-chevron-up"></i></a>
+			{{else}}
+				<a class="btn" href="{{pathFor 'yakPage'}}">{{commentsCount}} comments</a>
+				<a class="btn pull-right btn-small" href="{{pathFor 'accounts'}}"><i class="fa fa-chevron-down"></i></a>
+				<a class="btn pull-right" href="#"> {{score}} </a>
+				<a class="btn pull-right btn-small" href="{{pathFor 'accounts'}}"><i class="fa fa-chevron-up"></i></a>
+			{{/if}}
+			</div>
+		</li>
+	</div>
+</template> 

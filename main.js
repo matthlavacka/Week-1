@@ -4,6 +4,12 @@ Comments = new Mongo.Collection("comments");
 
 Router.route('/', {name: 'accounts'})
 
+Router.route('/wellness', {name: 'wellness'})
+
+Router.route('/wellnesssubmit', {name: 'wellnessSubmit'})
+
+Router.route('/wellnesslist', {name: 'wellnessList'})
+
 Router.route('/yakslist', {name: 'yaksList'})
 
 Router.route('/submit', {name: 'yaksSubmit'});
