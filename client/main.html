@@ -1,26 +1,26 @@
 <head>
+    <title>Welby</title>
+    <!-- To support mobile-devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
- <!-- <title><h1>Yak</h1>
-         <h2>#wellness</h2>
-         <h2>#coursework</h2>
-         <h2>#random</h2></title> -->
-<title>Yak</title>
-  <!-- To support mobile-devices -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bass css, object oriented grid framework -->
+    <!-- tackyons css for sizing/space/typography -->
 </head>
 
 <body>
-  <div class="navbar navbar-static-top">
-    <div class="navbar-inner">
-      <div class="container">
-        <a class="brand" href="/"><center><big><h1>Yak</h1></big></center></a>
-        <!--Josh: inserts the wellness, coursework, and random channels
-        <p><a class="brand" href="/wellness"><h6>#wellness</h6></a></p>
-        <p><a class="brand" href="/coursework"><h6>#coursework</h6></a></p>
-        <p><a class="brand" href="/random"><h6>#random</h6></a></p>-->
- <!-- <a class="btn btn-primary pull-right" href="/submit" type="button">Send Yak</a> -->
-      </div>
-    </div>
-  </div> 
+
+    <header class="header clearfix mx-auto col-11 mts navbar">
+        <a href="/"><img class="db di-m di-l center ptm mhl fl-m fl-l mw5  " src="welby.svg" alt="logo"/></a>
+
+
+        <ul class="list-reset mtm">
+      <!--Josh: inserts the wellness, coursework, and random channels. We need to define templates-->
+        <li class="di phm f3-l"><a class="brand " href="/wellness">#wellness</a></li>
+        <li class="di phm f3-l"><a class="brand" href="/coursework">#answers</a></li>
+        <li class="di phm f3-l"><a class="brand" href="/random">#community</a></li>
+       <!-- Evan: using a template to display the logout near the top -->
+          {{> signout}} 
+        </ul>
+    </header>
 
 </body>

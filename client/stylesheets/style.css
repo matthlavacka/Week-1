@@ -1,0 +1,268 @@
+/*========================
+--------Colors--------*/
+
+	.welbypurple {
+		color: #13146B;
+	}
+
+  .bg-welbypurple {
+    background-color: #13146B;
+  }
+
+  .b--welbypurple {
+    border-color: #13146B; 
+  }
+
+	.light-Gray {
+		background-color: #FAFAFA;
+	}
+
+
+	.bg-light-Purple {
+		background-color: #ACAECA;
+	}
+
+	.light-Teal {
+		color: #50C7CB;
+	}
+
+
+/*========================
+--------Generals--------*/
+
+  .mb-down {
+    margin-bottom: -0.4rem;
+  }
+
+
+	a {
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	li {
+		text-decoration: none;
+	}
+
+	.lato {
+		font-family: 'Lato'; 
+	}
+
+  .meri {
+    font-family: 'Merriweather';
+  }
+
+	.l-space {
+ 		letter-spacing: .09em;
+	}
+
+
+
+
+
+/*========================
+--------SIGNUP--------*/
+
+.lrg {
+	font-size: 2.3rem;
+	font-family: 'Lato';
+	font-weight: 300;
+	color: #FE8F5D;
+	letter-spacing: .2rem;
+}
+
+.med {
+	font-size: 1.5rem;
+	font-family: 'Lato';
+	font-weight: 300;
+	color: #FFC6AE;
+}
+.sml {
+	font-family: 'Lato';
+	font-weight: 300;
+}
+
+.name {
+	font-family: 'Lato';
+	font-weight: 300;
+	color: #188683;
+	letter-spacing: .1rem;
+}
+
+.blu {
+	color: #3CADB1;
+}
+
+.blu1 {
+	background-color: #E7FFF4;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+}
+
+#email {
+  height: 50px;
+  width: 60%;
+  background: #FFF;
+  font-family: 'Lato';
+  font-weight: normal;
+  color: #3CADB1;
+  letter-spacing: 1px;
+  text-indent: 5%;
+  border: solid 1px;
+  border-color: #3CADB1;
+  border-radius: 3px 0 0 3px;
+}
+
+
+#submit {
+  height: 50px;
+  width: 40%;
+  background: #3CADB1;
+  font-family: 'Lato';
+  font-weight: normal;
+  color: #FFF;
+  letter-spacing: 1px;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  transition: all .2s ease-in-out; 
+}
+  
+.grow:hover { transform: scale(1.1); }
+
+#submit:hover {
+  background: #373C83;
+  transform: scale(1.06)
+}
+# { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.2); } 
+
+input:focus {
+  outline: 2px solid #3CADB1;
+  box-shadow: 0 0 1px #373C83;
+}
+
+
+
+
+/*========================
+--------FADE-INS--------*/
+
+.tagline {
+	  -webkit-animation: fadein 4s; /* Safari and Chrome */
+       -moz-animation: fadein 4s; /* Firefox */
+        -ms-animation: fadein 4s; /* Internet Explorer */
+         -o-animation: fadein 4s; /* Opera */
+            animation: fadein 4s;
+}
+
+.backupline {
+	  -webkit-animation: fadein 4.2s; /* Safari and Chrome */
+       -moz-animation: fadein 4.2s; /* Firefox */
+        -ms-animation: fadein 4.2s; /* Internet Explorer */
+         -o-animation: fadein 4.2s; /* Opera */
+            animation: fadein 4.2s;
+}
+
+.principles {
+	   -webkit-animation: fadein 5s; /* Safari and Chrome */
+       -moz-animation: fadein 5s; /* Firefox */
+        -ms-animation: fadein 5s; /* Internet Explorer */
+         -o-animation: fadein 5s; /* Opera */
+            animation: fadein 5s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+/*========================
+--------FADE-IN COLORS--------*/
+
+.purple-fade:hover {
+	transition: all .2s ease-in-out;
+	color: #373C83 ; 
+
+}
+
+.light-purple-fade:hover {
+	transition: all .2s ease-in-out;
+	color: #FAFAFA ; 
+
+}
+
+.light-purple-fade:hover {
+	transition: all .2s ease-in-out;
+	color: #FAFAFA ; 
+
+}
+
+
+
+@media screen and (min-width: 42em) {
+
+.fixed-nav-bar-m {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  opacity: .95;
+  background-color: #fff;
+}}
+
+
+
+
+.blur {
+	-webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -ms-filter: blur(10px); 
+    -o-filter: blur(10px);
+    filter: blur(10px);
+}
+
+
+/*I'm trying to add animation. Lemme know if ya'll think it's tacky. */
+
+#swap {
+    vertical-align: top;
+    width: 0;
+    height: 1em;
+ /* needed. px, em or any other */
+}
+
+#swap > span {
+    position: absolute;
+}
+
+body { margin: 0 }
+img { max-width: 100% }
+svg { max-height: 100% }
+
+

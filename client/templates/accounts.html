@@ -1,0 +1,7 @@
+<template name="accounts">
+	{{#if currentUser}}
+		{{> yaksList}}
+	{{else}}
+		{{> landingPage}}
+	{{/if}}
+</template>
