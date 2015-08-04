@@ -2,17 +2,6 @@
 	{{#if currentUser}}
 		{{> yaksList}}
 	{{else}}
-	<div class="form-style">
-		<div class="container">
-			<div class="list-group-item">
-				<div class="pagination-centered">
-					<h2>Please login to continue</h2>
-					<div class="btn" align="right">
-					{{> loginButtons}}
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+		{{> landingPage}}
 	{{/if}}
 </template>

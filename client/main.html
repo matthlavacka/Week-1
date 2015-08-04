@@ -1,0 +1,26 @@
+<head>
+    <title>Welby</title>
+    <!-- To support mobile-devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bass css, object oriented grid framework -->
+    <!-- tackyons css for sizing/space/typography -->
+</head>
+
+<body>
+
+    <header class="header clearfix mx-auto col-11 mts navbar">
+        <a href="/"><img class="db di-m di-l center ptm mhl fl-m fl-l mw5  " src="welby.svg" alt="logo"/></a>
+
+
+        <ul class="list-reset mtm">
+      <!--Josh: inserts the wellness, coursework, and random channels. We need to define templates-->
+        <li class="di phm f3-l"><a class="brand " href="/wellness">#wellness</a></li>
+        <li class="di phm f3-l"><a class="brand" href="/coursework">#answers</a></li>
+        <li class="di phm f3-l"><a class="brand" href="/random">#community</a></li>
+       <!-- Evan: using a template to display the logout near the top -->
+          {{> signout}} 
+        </ul>
+    </header>
+
+</body>

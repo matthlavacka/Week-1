@@ -1,9 +1,13 @@
 <template name="yakItem">
-	<div class="yak">
+	<div class="col-11 mx-auto mtxl">
 		<li class="list-group-item">
-			<div class="yakPost">
-				<p class="break-el">{{yak}}</p>
+			<div class="">
+<!-- 				evan trying things -->	
+				
+				<p class="break-el f2-l">{{postTitle}}</p>
+				<p class="break-el f3-l">{{yak}}</p>
 			{{#if currentUser}}
+				
 				<a class="btn" href="{{pathFor 'yakPage'}}">{{commentsCount}} comments</a>
 				<a class="btn pull-right btn-small no" href="#"><i class="fa fa-chevron-down"></i></a>
 				<a class="btn pull-right" href="#"> {{score}} </a>

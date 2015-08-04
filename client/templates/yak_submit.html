@@ -2,15 +2,15 @@
 	<div class="yaksSubmit">
 		<div class="form-style">
 			<div class="container">
-					<form class="yaksSubmitForm">
-						{{#if currentUser}}
-						<div class="pull-right">
-							{{> loginButtons}}
-						</div>
-						{{/if}}
+					<form class="yaksSubmitForm" >
+						
 						<h3>Send yak. It's anonymous</h3>
-						<input autofocus="autofocus" type="text" id="yak" class="yak-form form-control" name="yak" placeholder="Type your yak here"/>
-						<input type="submit" value="Send yak" class="btn btn-primary">
+
+						<input autofocus="autofocus" type="text" id="postTitle" class=" form-control" name="postTitle" placeholder="Post Title"/>
+
+						<input  type="text" id="yak" class=" form-control" name="yak" placeholder="Now for some details"/>
+
+						<input type="submit" value="Submit" class="btn btn-primary">
 					</form>
 			</div>
 		</div>

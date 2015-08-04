@@ -1,18 +1,17 @@
 <template name="yaksList">
 
-<body> <a class="btn btn-primary center-block" href="/submit" type="button">Send Yak</a> </body>
 
-	<div class="yaks">
-		<div class="form-style">
-			<div class="container">
-				<ul class="list-group">
-					<h3>Live feed of what people are saying around you</h3>
-					       <!-- <a class="btn btn-primary pull-right" href="/submit" type="button">Send Yak</a> -->
-					{{#each yaks}}
-						{{> yakItem}}
-					{{/each}}
-				</ul>
-			</div>
-		</div>
-	</div>
+	<section class="clearfix mx-auto sm-col-11 md-col-8 lg-col-7 mvxl">
+
+		<h2 class="phl mll fl">What's on your mind?</h2>
+
+		<a class="btn center fr phl mhx" href="/submit" type="button">Send Yak</a> 
+
+
+		{{#each yaks}}
+			{{> yakItem}}
+		{{/each}}
+
+
+	</section>
 </template>
